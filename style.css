@@ -1,0 +1,664 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Roboto+Mono:wght@400;500;700&family=Roboto+Slab:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+    background-image: url(imagenes/fondo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    letter-spacing: 0.03em;
+    line-height: 1.6;
+}
+/*-------------------------MENÚ------------------------*/
+.header{    
+    background-color: #0f5a58;
+    width:  80%;
+    padding-top: 0;
+    margin-bottom: 900px;
+    box-shadow: 0 2px 2px rgba(0,0,0, 0.2);
+    position: fixed;    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 5px 10%;
+}
+.header .logo{
+    cursor: pointer;
+}
+.header .logo img:hover{
+    transform: scale(1.3);
+}
+.header .logo img{
+    padding-top: 10px;
+    height: 70px;
+    width: auto;
+    transition: all 0.3s;
+}
+.header .menu{
+    list-style: none;
+}
+.header .menu li{
+    display: inline-block;
+    padding: 0 20px;
+}
+.header .menu li:hover{
+    transform: scale(1.2);
+}
+.activo{
+    transform: scale(1.2);
+}
+.activo a{
+    color: aquamarine;
+}
+.header .menu a{
+    font-size: 20px;
+    text-decoration: none;
+}
+.nactivo a{
+    color: aliceblue;
+}
+/*-------------------------FIN MENÚ------------------------*/
+
+/*--------------------------INICIO-------------------------*/
+
+.contenido {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto; 
+}
+.izquierda{
+    width: 33%;
+    margin-top: 9%;
+    margin-right: 5%;
+}
+.titulo{
+    display: flex;
+    width: 104%;
+    height: 38px;
+    justify-content: center;
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0, 0.2);
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 2%;
+    font-size: 12px;
+    overflow: hidden;
+}
+.texto {
+    display: flex;
+    width: 100%;
+    margin-top: 9%;
+    margin-right: 2%;
+    text-align: center;
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0, 0.2);
+    background-color: rgba(255, 255, 255, 0.3);
+    text-align:justify;
+    padding: 4%;
+    font-size: 20px;
+    overflow: hidden;
+}
+.derecha{
+    width: 60%;
+    margin-top: 9%;
+    height: 100%;
+}
+.texto2 {
+    overflow: right;
+    display: flex;
+    width: 96%;
+    text-align: center;
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0, 0.2);
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 2%;
+    height: auto;
+    text-align: justify;
+    font-size: 20px;
+    overflow: hidden;
+}
+.carrucel {
+    width: 100%;
+    height: 20%;
+
+    margin-bottom: 4%;
+    overflow: hidden;
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0, 0.2);
+}
+.carrucel ul{
+    padding: 0%;
+    display: flex;
+    width: 400%;
+
+    animation: animacion 20s infinite alternate;
+}
+.carrucel li{
+    width: 100%;
+    list-style: none;
+}
+.carrucel img {
+    width: 100%;
+    height: 100%;
+}
+/*-----------------------FIN INICIO------------------------*/
+
+/*-------------------------RESEÑAS-------------------------*/
+.reseñas {
+    margin-left: 10.3%;
+ 
+    display: flex;
+}
+.reseñas h1{
+    text-align: center;
+}
+.cliente {
+    width: 24.4%;
+    margin: 5% 5% 5% 0;
+    padding: 17px 0 10px 20px;
+
+    overflow: hidden;
+    justify-content: space-between;
+    
+    align-items: center;
+    box-shadow: 2px 2px 30px rgba(0,0,0, 0.2);
+    background-color: #ffffff;
+}
+.nombre{    
+    width: 40%;
+    display: flex;
+    overflow: hidden;
+}
+.imagen{
+    width: 50%;
+    display: flex;
+    overflow: hidden;
+}
+.imagen img{
+    width: 50px;
+    border-radius: 50%;
+}
+.estrellas{
+    display: flex;
+    color: #D4AF37;
+    width: 1000px;
+}
+.comentario{
+    width: 100%;
+    text-overflow: fade;
+}
+.texto3{
+    width:78.5%;
+    margin: 5% 0% 0% 10.3%;
+    text-align: center;
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0, 0.2);
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 10px 0 10px 0;
+    height: auto;
+    font-size: 10px;
+    overflow: hidden;
+}
+/*-----------------------FIN RESEÑAS-----------------------*/
+
+/*--------------------------CARTA--------------------------*/
+
+.tarjetas{
+    padding-top: 7%;
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    align-content: center;
+}
+
+.plato{
+    cursor: pointer;
+    background-color: #ffffff;
+    border-radius: 2%;
+    width: 330px;    
+    box-shadow: 0 2px 2px rgba(0,0,0, 0.2);
+    overflow: hidden;
+    margin: 20px 0px 30px 50px;
+    text-align: justify;
+    transition: all 0.25s;
+}
+.plato h3{
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.plato p{
+    padding-left: 17px;
+    padding-right: 17px;
+}
+.plato h2{
+    padding-top: 12px;
+    padding-right: 17px;
+    text-align: right;
+}
+.plato img{
+    width: 330px;
+    height: 220px;
+}
+.plato:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0,0,0, 0.2);
+}
+.alergenos{
+    padding-left: 17px;
+}
+.alergenos ul li{
+    display: inline-block;
+}
+.alergenos img{
+    width: 80%;
+    height: 50%;
+}
+
+/*------------------------FIN CARTA------------------------*/
+
+/*-------------------------CONTACTO------------------------*/
+
+.contacto1{
+    width: 100%;
+    padding-top: 9%
+}
+.part1{
+    padding-top: 20px;
+    height: 300px;
+    width: 80%;
+    margin: auto;
+    display: flex;
+}
+.h1{
+    margin: auto;
+    width: 80%;
+    height: 17%;
+    text-align: center;
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0, 0.2);
+    background-color: rgba(255, 255, 255, 0.3);
+}
+.informacion{
+    width: 46.5%;
+    font-size: 20px;
+    text-align: justify;
+    padding: 2%;
+    display: flex;
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0, 0.2);
+    background-color: rgba(255, 255, 255, 0.3);
+}
+.formulario{
+    width: 46.5%;
+    margin-left: auto;
+    padding-top: 9px;
+    text-align: center;
+    /* box-shadow: 2px 2px 2px 2px rgba(0,0,0, 0.2);
+    background-color: rgba(255, 255, 255, 0.3); */
+}
+input, textarea{
+
+    width: 90%;
+    margin-bottom: 20px;
+    padding: 7px;
+    font-size: 17px;
+    box-sizing: border-box;
+}
+textarea{
+    min-height: 100px;
+    max-height: 100px;
+}
+#boton:hover{
+    cursor: pointer;
+}
+.part2{
+    padding-top: 20px;
+    padding-bottom: 50px;
+    width: 80%;
+    margin: auto;
+    display: flex;
+}
+.mapa{
+    margin: auto;
+    width: 80%;
+    margin-top: 2%;
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0, 0.2);
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.info{
+    width: 46.5%;
+    margin-left: auto;
+    text-align: center;
+    padding-top: 8px;
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0, 0.2);
+    background-color: rgba(255, 255, 255, 0.3);
+}
+.redes-contacto{
+    display: inline-block;
+    margin-top: 0px;
+    margin-bottom: 8px;
+}
+.redes-contacto ul li{
+    list-style: none;
+    display: inline-block;
+}
+.redes-contacto ul li a img{
+    width: 70px;
+    margin: 5px;
+    
+}
+.premio{
+    width: 51.5%;
+}
+.premio img{
+    width: 100%;
+}
+/*-----------------------FIN CONTACTO----------------------*/
+
+/*--------------------------FOOTER--------------------------*/
+footer {
+    width: 100%;
+	background: #0f5a58;
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0, 0.2);
+	color: #F7F2EF;
+	font-size: 10px;
+    bottom:0px;
+	margin-top: 10px;
+    padding-bottom: 10px;
+}
+.general{
+    height: 60px;
+    display: flex; 
+    padding: 2% 11% 0% 10%;
+}
+.redes{
+    width: 27%;
+    height: 60px;
+    margin: auto;
+}
+.redes ul{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+}
+.icon{
+    cursor: pointer;
+    width: 30px;
+    padding: 0 10px 0 10px;
+}
+.icon:hover{
+    transform: translateY(-5px);
+}
+.redes ul li{
+    display:inline-block;
+}
+.linea{
+    width:37%;
+    height: 50px;
+    overflow: hidden;
+    align-items: center;
+}
+.linea hr{
+    width: 100%;
+    margin: 10px 0 26px 0;
+}
+.general2{
+    width: 80.7%;
+    display: flex;
+    padding: 0 1% 0 9%;
+}
+.compañia{
+    width: 15%;
+    margin-left: 1.1%;
+}
+.compañia h4{
+    font-size: 20px;
+    color: aliceblue;
+    margin-bottom: 25px;
+    border-bottom: 1.3px solid #ffffff;
+    padding-bottom: 3px;
+    display: inline-block;
+}
+.compañia ul li{
+    list-style: none;
+}
+.compañia ul li a{
+    font-size: 15px;
+    text-decoration: none;
+    color: aliceblue;
+    transition: all .3s ease;
+}
+.compañia ul li a:hover{
+    padding-left: 6px;
+}
+.contacto{
+    width: 11%;
+    margin-left: 11%;
+    text-align: right;
+}
+.contacto h4{
+    font-size: 20px;
+    color: aliceblue;
+    margin-bottom: 20px;
+    border-bottom: 1.3px solid #ffffff;
+    padding-bottom: 3px;
+    display: inline-block;
+}
+.contacto ul li{
+    list-style: none;
+}
+.contacto ul li a{
+    font-size: 15px;
+    text-decoration: none;
+    color: aliceblue;
+    transition: all .3s ease;
+}
+.contacto ul li:hover{
+    padding-right: 6px;
+    cursor: pointer;
+}
+.logof{
+    width: 13%;
+    margin-left: auto;
+}
+.logof img{
+    border-radius: 50%;
+    width: 100%;
+}
+/*------------------------FIN FOOTER------------------------*/
+
+@keyframes animacion {
+    0%{ margin-left: 0;}
+    20%{ margin-left: 0;}
+
+    25%{ margin-left: -100%;}
+    45%{ margin-left: -100%;}
+
+    50%{ margin-left: -200%;}
+    70%{ margin-left: -200%;}
+
+    75%{ margin-left: -300%;}
+    100%{ margin-left: -300%;}
+}
+
+@media screen and (max-width: 800px){
+
+/* --------------------MENU------------------- */
+
+.header{    
+    background-color: #0f5a58;
+    width:  100%;
+    margin-bottom: 0;
+    box-shadow: 0 2px 2px rgba(0,0,0, 0.2);
+    position:inherit;    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 5px 0%;
+}
+.header .menu li{
+    display: inline-block;
+    padding: 0 7px;
+}
+/* ------------------FIN MENU----------------- */
+/* -------------------INICIO------------------ */
+    .titulo{
+        width: 96%;
+        margin-top: 3%;
+    }
+    .izquierda{
+        width: 100%;
+    }
+    .texto {
+        display: flex;
+        width: 92%;
+        margin-top: 4%;
+        margin-right: 0;
+        font-size: 20px;
+        overflow: hidden;
+    }
+    .izquierda{
+        width: 100%;
+        margin: 0;
+    }
+    .derecha{
+        width: 100%;
+        margin-top: 4%;
+    }
+    .texto3{        
+        width: 100%;
+        margin: 5% 0% 3% 0%;
+    }
+    .header{
+        width: 100%;
+    }
+    .reseñas{
+        display:contents;
+        margin: 0;
+    }
+    .cliente{
+        width: 98%;
+        margin: 0;
+        padding: 2% 0% 2% 2%;
+        box-shadow: 0px 0px 0px ;
+        background-color: #ffffff;
+    }
+/* ----------------FIN INICIO---------------- */
+/* ------------------CARTA------------------- */
+    .plato{
+        border-radius: 0%;
+        width: 100%;    
+        box-shadow: 0;
+        margin: auto;
+        text-align: justify;
+        transition:none;
+    }
+    .plato img{
+        width: 100%;
+    }
+    .plato:hover{
+        display: none;
+    }
+/* -----------------FIN CARTA---------------- */
+/* ------------------CONTACTO---------------- */
+.contacto1{
+    width: 100%;
+    padding-top: 4%;
+}
+.part1{
+    padding-top: 20px;
+    height: 300px;
+    width: 100%;
+    margin: auto;
+    display:contents;
+}
+.h1{
+    width: 100%;
+    font-size: 12px;
+}
+.informacion{
+    width: 94%;
+    margin-top: 3%;
+    font-size: 20px;
+    text-align: justify;
+    padding: 3%;
+}
+.formulario{
+    width: 80%;
+    margin-left: auto;
+    padding: 5% 10% 0 10%;
+    text-align: center;
+}
+.part2{
+    padding-top: 20px;
+    padding-bottom: 50px;
+    width: 100%;
+    margin: auto;
+    display:contents;
+}
+.mapa{
+    margin: auto;
+    width: 100%;
+}
+.info{
+    width: 100%;
+}
+
+.redes-contacto ul li a img{
+    width: 100%;
+    margin: 5px;
+    
+}
+.premio{
+    width: 100%;
+}
+.premio img{
+    width: 100%;
+}
+.redes-contacto ul li a img{
+    width: 60px;
+    margin: 5px;
+    
+}
+/* ----------------FIN CONTACTO-------------- */
+/* ------------------FOOTER------------------ */
+    footer {
+        box-shadow: 0;
+        margin-top: 0;
+        padding-bottom: 0px;
+    }
+    .linea{
+        display: none;
+    }
+    .redes{
+        width: 100%;
+    }
+    .logof{
+        display: none;
+    }
+    .general2{
+        width: 80%;
+        padding: 0 10% 0 10%;
+    }
+    .compañia{
+        width: 40%;
+        margin: 0%;
+    }
+    .contacto{
+        width: 40%;
+        margin-left: auto;
+        text-align:justify;
+    }
+    .contacto h4{
+        display: inherit;
+    }
+/* ----------------FIN FOOTER----------------- */
+}
